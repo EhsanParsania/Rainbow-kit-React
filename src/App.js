@@ -33,6 +33,12 @@ const { provider, chains } = configureChains(
     }),
   ]
 );
+
+const { connectors } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  chains
+});
+
 export default function App() {
   return (
     <WagmiConfig client={wagmiClient}>
