@@ -1,2 +1,2 @@
 # Rainbow-kit-React
-rainbow-kit implementation with react and custom chain
+rainbow-kit implementation with **React** and **custom chain**
