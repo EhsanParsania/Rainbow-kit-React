@@ -1,5 +1,6 @@
 # Rainbow-kit-React
-rainbow-kit implementation with **React** and **custom chain**
-// showing a relative path svg image
+Rainbow-kit implementation with **React** and **custom chain**
+
+
 ![rainbow-kit](./rainbow-kit.svg)
 
