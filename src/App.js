@@ -7,5 +7,9 @@ import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
 export default function App() {
   return (
     <WagmiConfig client={wagmiClient}>
+      <RainbowKitProvider chains={chains}>
+        <MyComponent />
+      </RainbowKitProvider>
+    </WagmiConfig>
   );
 }
