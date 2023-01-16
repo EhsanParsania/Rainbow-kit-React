@@ -24,6 +24,15 @@ const bscTestnet = {
   blockExplorers: {},
   testnet: true,
 };
+
+const { provider, chains } = configureChains(
+  [bscTestnet],
+  [
+    jsonRpcProvider({
+      rpc: chain => ({ http: chain.rpcUrls.default.http[0] }),
+    }),
+  ]
+);
 export default function App() {
   return (
     <WagmiConfig client={wagmiClient}>
