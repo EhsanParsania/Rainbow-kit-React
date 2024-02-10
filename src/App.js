@@ -1,6 +1,7 @@
 import React from "react";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
 import "@rainbow-me/rainbowkit/styles.css";
+
 import { configureChains, createClient, WagmiConfig } from "wagmi";
 import { MyComponent } from "./MyComponent";
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc';
@@ -25,7 +26,10 @@ const bscTestnet = {
   testnet: true,
 };
 
-// development : this is the config to use for local hardhat network
+/*
+ Developer guide : 
+ this is the config to use for local hardhat network
+*/
 const hardhatLocalChain = {
   id: 31337,
   name: 'Hardhat Local Chain',
